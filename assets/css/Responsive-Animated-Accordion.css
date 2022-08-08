@@ -1,0 +1,43 @@
+.container {
+  margin-top: 3em;
+}
+
+.card-header {
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.card-header a {
+  display: block;
+  padding: .75rem 1.25rem;
+  color: #000;
+  border-bottom: 1px solid #b42b2b;
+  text-decoration: none;
+}
+
+.card-header a[aria-expanded=false] {
+  background-color: rgba(0,0,0,0.03);
+}
+
+.card-header a[aria-expanded=false]:hover {
+  background-color: rgb(180,43,43);
+  color: white;
+}
+
+.card-header a:before {
+  font-family: 'FontAwesome';
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.card-header a[aria-expanded=false]:before {
+  content: "\f0fe";
+  float: left;
+}
+
+.card-header a[aria-expanded=false]:hover::before {
+  content: "\f0fe";
+  float: left;
+}
+
